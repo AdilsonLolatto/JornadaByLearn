@@ -1,0 +1,23 @@
+nome = (input("Nome: "))
+peso = float(input("Peso: "))
+altura = float(input("Altura: "))
+
+IMC = peso/altura**2
+print("Seu IMC é {:.2f}".format(IMC))
+
+if IMC < 16:
+    print(nome+": Seu caso é de Magreza Grave")
+elif IMC < 17:
+    print(nome+": Seu caso é de Magreza Moderada")
+elif IMC < 18.5:
+    print(nome+": Seu caso é de Magreza Leve")
+elif IMC <25:
+    print(nome+": Seu caso é de Peso normal")
+elif IMC <30:
+    print(nome+": Seu caso é de Sobrepeso")
+elif IMC <35:
+    print(nome+": Seu caso é de Obesidade Grau I")
+elif IMC <40:
+    print(nome+": Seu caso é de Obesidade Grau II")
+else:
+    print(nome+": Seu caso é de Obesidade Mórbida")
